@@ -21,7 +21,7 @@ export function showConsoleLogo() {
 export function showAestheticNotice() {
   // 配置项
   const NOTICE_KEY = 'hasSeenAestheticNotice_2024_v1'
-  const EXPIRY_DATE_STRING = '2025-12-20'
+  const EXPIRY_DATE_STRING = '2026-3-2'
   const ISSUE_URL = 'https://github.com/fwindemiko/MiragEdge-DocWeb/issues/new?template=issue_template.yml'
 
   try {
@@ -40,7 +40,7 @@ export function showAestheticNotice() {
     createNoticeElement()
 
   } catch (error) {
-    console.error("无法显示美学更新提示:", error)
+    console.error("无法显示更新提示:", error)
   }
 
   function createNoticeElement() {
@@ -48,8 +48,8 @@ export function showAestheticNotice() {
     noticeWrapper.id = 'aesthetic-notice'
     noticeWrapper.innerHTML = `
       <div class="notice-content">
-        <h4>✨ 焕然一新！</h4>
-        <p>文档站的美学设计已全面更新，希望能为您带来更好的阅读体验。</p>
+        <h4>✨ 汐汐狐仓库！</h4>
+        <p>这里是锐界幻境的文档仓库哦~如有侵权请主动联系。</p>
         <p>如果在浏览时遇到任何显示问题或任何无障碍问题，请<a href="${ISSUE_URL}" target="_blank" rel="noopener noreferrer">提交 Issue</a> 帮助我们改进，非常感谢！</p>
         <button class="close-button" aria-label="关闭提示">&times;</button>
       </div>

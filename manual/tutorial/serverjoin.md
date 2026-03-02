@@ -1,6 +1,6 @@
 # 🔗 入服方法&链接
 
-> 💡Tips
+> 💡Tips  
 > 还不会安装客户端？[前往查看客户端安装教程（下载安装游戏）](https://miragedge.top/manual/tutorial/clientinstall.html)
 
 **最新地址与端口**  
@@ -37,7 +37,7 @@
 1. 进入游戏主界面 → 选择"服务器"
 
 2. 左侧列表滑动至底部点击"添加服务器"
-<SmartImage src="/images/BEGame.png" alt="添加服务器" maxWidth="400px" />
+<SmartImage src="https://cloud.miragedge.top/d/Dev/web_image/msreg/tutorial/BEGame.png" alt="添加服务器" maxWidth="400px" />
 
 3. 填写连接信息：  
     `服务器名称: 我爱狐狸[自定义备注]`  

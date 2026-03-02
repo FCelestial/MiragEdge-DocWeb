@@ -81,7 +81,7 @@
 > - 低版本基岩版客户端支持覆盖更新；
 > - 苹果手机基岩版长时间不更新可能出现登录异常。
 
-> 💡Tips
+> 💡Tips  
 > 完成安装了？[前往查看入服教程（添加服务器）](https://miragedge.top/manual/tutorial/serverjoin.html)
 
 ## 1. 微软账户注册教程
