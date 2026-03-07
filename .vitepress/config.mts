@@ -332,11 +332,11 @@ export default defineConfig({
               collapsed: true, 
               items: [
                 { text: '👾 各种原创小插件', link: '/develop/mc_plugins/allin' },
-                { text: '💰 等价交换商店', link: '/develop/mc_plugins/emcshop' },
-                { text: '✈ 限时飞行', link: '/develop/mc_plugins/fe_fly' },
-                { text: '🛩️ 幻空翼飞行', link: '/develop/mc_plugins/SkyElytra' },
-                { text: '🗞️ 物品功能核心', link: '/develop/mc_plugins/fe_itemscore' },
-                { text: '📜 冒险等级任务', link: '/develop/mc_plugins/fe_quests' },
+                { text: '等价交换商店', link: '/develop/mc_plugins/emcshop' },
+                { text: '限时飞行', link: '/develop/mc_plugins/fe_fly' },
+                { text: '幻空翼飞行', link: '/develop/mc_plugins/SkyElytra' },
+                { text: '物品功能核心', link: '/develop/mc_plugins/fe_itemscore' },
+                { text: '冒险等级任务', link: '/develop/mc_plugins/fe_quests' },
               ]
             },
           ]
@@ -360,7 +360,8 @@ export default defineConfig({
           text: '📕 网站开发编辑',
           collapsed: false,
           items: [
-            { text: '🎇 自动图像组件', link: '/develop/webdev/autoimage' },
+            { text: '自动图像组件', link: '/develop/webdev/autoimage' },
+            { text: '矢量图标库', link: '/develop/webdev/vectoricons' },
           ]
         },
         { 

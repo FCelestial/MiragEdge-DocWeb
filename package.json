@@ -51,6 +51,7 @@
     "@octokit/rest": "^22.0.1",
     "@vrcd-community/markdown-it-video": "^1.1.1",
     "dotenv": "^17.2.3",
+    "lucide-vue-next": "^0.577.0",
     "simple-git": "^3.30.0",
     "vitepress-plugin-announcement": "^0.1.5",
     "vitepress-plugin-group-icons": "^1.6.3",

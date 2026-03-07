@@ -36,6 +36,10 @@
 
 各种与食物相关的HUD改进，通过服务端侧支持，显示准确的饱食度/饱和度  
 
+## 遥远地平线
+
+支持最大视距1024区块
+
 ## 音乐点播姬([AllMusic](https://www.mcmod.cn/class/14959.html "AllMusic"))
 <SmartImage 
   src="/images/msreg/allmusic.jpg" 
