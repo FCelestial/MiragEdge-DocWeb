@@ -216,56 +216,68 @@ export default defineConfig({
           ]
         },
         {
-          text: '🌼 真实季节',
-          collapsed: true,
-          items: [
-            { text: '整体介绍', link: '/features/seasons/info' },
-            { text: '温度系统', link: '/features/seasons/temperature' },
-            { text: '春季', link: '/features/seasons/spring' },
-            { text: '夏季', link: '/features/seasons/summer' },
-            { text: '秋季', link: '/features/seasons/fall' },
-            { text: '冬季', link: '/features/seasons/winter' },
-          ]
-        },
-        {
-          text: '🌱 星露谷种植',
-          collapsed: true,
-          items: [
-            { text: '介绍', link: '/features/croups/info' },
-          ]
-        },
-        {
-          text: '🎣 星露谷钓鱼',
-          collapsed: true,
-          items: [
-            { text: '介绍', link: '/features/fishing/info' },
-          ]
-        },
-        {
-          text: '✨ 更多附魔',
+          text: '🌽 田园般的生活',
           collapsed: false,
           items: [
-            { text: '介绍', link: '/features/enchantments/info' },
-            { text: '品质等级', link: '/features/enchantments/rarity' },
-            { text: '功能分类', link: '/features/enchantments/group' },
-            { text: '附魔列表', link: '/features/enchantments/list' },
-            { text: '祛魔系统', link: '/features/enchantments/chesed' },
+            {
+              text: '🌼 真实季节',
+              collapsed: true,
+              items: [
+                { text: '介绍', link: '/features/seasons/info' },
+                { text: '温度系统', link: '/features/seasons/temperature' },
+                { text: '春季', link: '/features/seasons/spring' },
+                { text: '夏季', link: '/features/seasons/summer' },
+                { text: '秋季', link: '/features/seasons/fall' },
+                { text: '冬季', link: '/features/seasons/winter' },
+              ]
+            },
+            {
+              text: '🎣 更多钓鱼',
+              collapsed: true,
+              items: [
+                { text: '介绍', link: '/features/fishing/info' },
+              ]
+            },
+            {
+              text: '🌱 更多种植',
+              collapsed: true,
+              items: [
+                { text: '介绍', link: '/features/croups/info' },
+              ]
+            },
+            {
+              text: '🍲 更多食物',
+              collapsed: true,
+              items: [
+                { text: '介绍', link: '/features/food/info' },
+              ]
+            },
           ]
         },
         {
-          text: '⚔️ 装备升级',
-          collapsed: true,
+          text: '🧙‍♂️ 冒险与战斗',
+          collapsed: false,
           items: [
-            { text: '介绍', link: '/features/mmo/info' },
+            {
+              text: '✨ 更多附魔',
+              collapsed: true,
+              items: [
+                { text: '介绍', link: '/features/enchantments/info' },
+                { text: '品质等级', link: '/features/enchantments/rarity' },
+                { text: '功能分类', link: '/features/enchantments/group' },
+                { text: '附魔列表', link: '/features/enchantments/list' },
+                { text: '祛魔系统', link: '/features/enchantments/chesed' },
+              ]
+            },
+            {
+              text: '⚔️ 装备升级',
+              collapsed: true,
+              items: [
+                { text: '介绍', link: '/features/mmo/info' },
+              ]
+            },
           ]
         },
-        {
-          text: '🍲 更多食物',
-          collapsed: true,
-          items: [
-            { text: '介绍', link: '/features/food/info' },
-          ]
-        }
       ],
  
       '/manual/': [
