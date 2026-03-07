@@ -338,17 +338,12 @@ export default defineConfig({
           text: '🔌 原创插件开发',
           collapsed: false,
           items: [
-            { text: '📋 项目开发说明', link: '/develop/mc_plugins/' },
+            { text: '📋 项目开发说明', link: '/develop/mc_plugins/index' },
             {
-              text: '📊 独家插件列表', 
+              text: '📊 原创插件列表', 
               collapsed: true, 
               items: [
-                { text: '👾 各种原创小插件', link: '/develop/mc_plugins/allin' },
-                { text: '等价交换商店', link: '/develop/mc_plugins/emcshop' },
-                { text: '限时飞行', link: '/develop/mc_plugins/fe_fly' },
-                { text: '幻空翼飞行', link: '/develop/mc_plugins/SkyElytra' },
-                { text: '物品功能核心', link: '/develop/mc_plugins/fe_itemscore' },
-                { text: '冒险等级任务', link: '/develop/mc_plugins/fe_quests' },
+                { text: '🦊 狐风轩汐', link: '/develop/mc_plugins/fwindemiko' },
               ]
             },
           ]
