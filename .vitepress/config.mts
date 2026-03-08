@@ -163,7 +163,7 @@ export default defineConfig({
       },
       { 
         text: '💻 开发文档', 
-        link: '/develop/',
+        link: '/develop/index',
         activeMatch: '^/develop/'
       },
       { 
@@ -327,13 +327,7 @@ export default defineConfig({
       ],
  
       '/develop/': [
-        {
-          text: '📖 开发文档',
-          items: [
-            { text: '👥 开发团队与介绍', link: '/develop/' },
-            { text: '📝 代码规范', link: '/develop/develop_standard' },
-          ]
-        },
+        { text: '📖 开发团队与介绍', link: '/develop/index' },
         {
           text: '🔌 原创插件开发',
           collapsed: false,
@@ -341,7 +335,7 @@ export default defineConfig({
             { text: '📋 项目开发说明', link: '/develop/mc_plugins/index' },
             {
               text: '📊 原创插件列表', 
-              collapsed: true, 
+              collapsed: false, 
               items: [
                 { text: '🦊 狐风轩汐', link: '/develop/mc_plugins/fwindemiko' },
               ]
@@ -352,6 +346,7 @@ export default defineConfig({
           text: '🎨 服务器插件配置编写',
           collapsed: false,
           items: [
+            { text: '贴图字符码', link: '/develop/server_configs/sticker' },
             { text: '自定义作物', link: '/develop/server_configs/customcrops' },
             { text: '更多附魔', link: '/develop/server_configs/enchanting' },
           ]
@@ -371,21 +366,14 @@ export default defineConfig({
             { text: '矢量图标库', link: '/develop/webdev/vectoricons' },
           ]
         },
-        { 
-          text: '✨ 贴图字符码', 
-          link: '/develop/sticker' 
-        },
-        { 
-          text: '📅 更新日志', 
-          link: '/develop/logs' 
-        },
         {
           text: '🔗 关于',
-          collapsed: true,
+          collapsed: false,
           items: [
-            { text: '节点状态', link: '/develop/serverstatus' },
+            { text: '📅 更新日志', link: '/develop/logs' },
+            { text: '🐚 节点状态', link: '/develop/serverstatus' },
           ]
-        }
+        },
       ],
     },
     
