@@ -1,6 +1,35 @@
-# 📄 MiragEdge锐界幻境 游玩指南
+# 📄 功能玩法指南
 
-我将向你介绍锐界幻境服务器的所有主要功能和次要功能，以及特性
+想知道我们有哪些功能玩法？本页面将引导您快速了解学习我们制作的独特内容！
+
+<div class="feature-cards">
+  <a href="/features/base/economy" class="feature-card chat-card">
+    <div class="feature-card-content">
+      <h3>✨ 基础内容</h3>
+      <p>我们的货币体系，领地如何创建，独特的小功能。</p>
+    </div>
+  </a>
+</div>
+
+<div class="feature-cards">
+  <a href="/features/pastoral/builder" class="feature-card chat-card">
+    <div class="feature-card-content">
+      <h3>🌼 田园生活</h3>
+      <p>只想搞搞建筑？走养老生存的路线。看看我们的季节、种植和食物等内容吧！</p>
+    </div>
+  </a>
+</div>
+
+<div class="feature-cards">
+  <a href="/features/adventure/mmo/info" class="feature-card chat-card">
+    <div class="feature-card-content">
+      <h3>⚔️ 冒险与战斗</h3>
+      <p>打怪升级，挑战自己。了解如何制作独特的装备，提升属性！</p>
+    </div>
+  </a>
+</div>
+
+有关常见问题的详细解答，请参考[常见问题](/manual/faq)页面
 
 <style>
 .feature-cards {
@@ -80,29 +109,3 @@
   background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
 }
 </style>
-
-<div class="feature-cards">
-  <a href="/features/seasons/info" class="feature-card chat-card">
-    <div class="feature-card-content">
-      <h3>🌼 真实季节</h3>
-      <p>完整的季节循环，每个季节都拥有独一无二的视觉风格与专属特色。</p>
-    </div>
-  </a>
-</div>
-
-<div class="feature-cards">
-  <a href="/features/enchantments/info" class="feature-card chat-card">
-    <div class="feature-card-content">
-      <h3>✨ 更多附魔</h3>
-      <p>你是否厌倦了原版千篇一律的附魔？我们添加了近300个新的附魔内容！覆盖8个品质等级。</p>
-    </div>
-  </a>
-</div>
-
-
-## 常见问题解答
-
-有关常见问题的详细解答，请参考[常见问题](/manual/faq)页面，其中包含：
-
-- 功能使用疑问
-

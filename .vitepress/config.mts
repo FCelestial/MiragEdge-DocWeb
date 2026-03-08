@@ -271,7 +271,7 @@ export default defineConfig({
             },
             {
               text: '⚔️ 装备升级',
-              collapsed: true,
+              collapsed: false,
               items: [
                 { text: '介绍', link: '/features/adventure/mmo/info' },
                 { text: '锻造升级', link: '/features/adventure/mmo/forge' },
