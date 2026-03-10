@@ -3,12 +3,15 @@
 
 ## 世界垃圾桶
 > 最受好评的功能！开局装备全靠捡~  
-旋风狐扫地(清理掉落物)后会把清理的物品加入到垃圾桶中。扫地周期为20分钟一次，扫地5次后会刷新垃圾桶。  
+
+旋风狐扫地(清理掉落物)后会把清理的物品加入到垃圾桶中。  
+扫地周期为20分钟一次，扫地5次后会刷新垃圾桶。  
 **不会被扫地清理的物品**：各类武器、盔甲、工具、矿物及所有潜影盒。  
 **不会进入垃圾桶(直接消失)的物品**：量大的基础方块、装饰植物、地毯、铁轨与种子。
 
 ## 史莱姆桶
 用空铁桶右键小史莱姆可抓获和放下  
+（也许能用来做菜？）
 
 <SmartImage 
   src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/slime_ball.gif" 
@@ -20,7 +23,7 @@
 ## 经验之瓶
 可以合成“空的经验之瓶”  
 拿在手上右击可存储经验  
-根据经验的多少转变成 大、中、小 三中经验之瓶，存入的过程存在损耗  
+根据经验的多少转变成 大、中、小 三种经验之瓶，存入的过程存在损耗  
 喝下即可获得经验值  
 
 <SmartImage 
@@ -44,6 +47,13 @@
 />
 
 <SmartImage 
+  src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/sickle_make.png" 
+  alt="合成金镰刀"
+  caption="合成金镰刀"
+  maxWidth="350px"
+/>
+
+<SmartImage 
   src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/sickle_show.gif" 
   alt="镰刀的收获和补种"
   caption="镰刀的收获和补种"
@@ -56,17 +66,55 @@
 ## 土径加速
 小路加速功能，在土径上行走可获得加速效果，现在真的有必要修一条路了！
 
+<SmartImage 
+  src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/土径加速.gif" 
+  alt="土径加速"
+  caption="土径加速"
+  maxWidth="350px"
+/>
+
+## 跳过夜晚
+一个世界中，当有20%的玩家睡觉就可加速跳过夜晚。
+
 ## 箱子整理
-激活按钮后，周围3*3范围的箱子会自动整理物品，冷却时间1000ms
+激活按钮后，以按钮为中心周围3*3范围的箱子会自动整理物品，冷却时间1000ms
+
+<SmartImage 
+  src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/箱子整理.gif" 
+  alt="箱子整理"
+  caption="箱子整理"
+  maxWidth="350px"
+/>
 
 ## 双开门
 两个门组成的大门，右键可同时打开，红石激活也是一样。
 
+<SmartImage 
+  src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/double-doors.gif" 
+  alt="双开门"
+  caption="双开门"
+  maxWidth="350px"
+/>
+
 ## 优化种植
 右键点击完全长大的植物可立即收获并重新种植，且获得多件物品的概率提升。
 
+<SmartImage 
+  src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/better-harvesting.gif" 
+  alt="优化种植"
+  caption="优化种植"
+  maxWidth="350px"
+/>
+
 ## 爆炸保护
-苦力怕爆炸后会有“时间回溯”效果（被炸后会慢慢恢复原样）
+凋零和苦力怕爆炸后会有“时间回溯”效果（被炸后会慢慢恢复原样）
+
+<SmartImage 
+  src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/creeper-protection.gif" 
+  alt="苦力怕爆炸保护"
+  caption="苦力怕爆炸保护"
+  maxWidth="350px"
+/>
 
 ## 过于昂贵
 取消铁砧“过于昂贵”的限制
