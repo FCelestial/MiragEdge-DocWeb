@@ -5,8 +5,8 @@ title: MiragEdge 文档中心
 
 hero:
   name: "锐界幻境"
-  text: "Minecraft生存服务器"
-  tagline: 👼🏻远离困恼之地（锐界）和天堂般的境地（幻境），在数字荒漠中打造一片绿洲，让每个玩家都能找到属于自己的幻境
+  text: "Minecraft 生存服务器"
+  tagline: 👼🏻 远离困扰之地（锐界）和天堂般的境地（幻境），在数字荒漠中打造一片绿洲，让每个玩家都能找到属于自己的幻境
   image:
     src: /avatars/MiragEdge.png
     alt: MiragEdge
@@ -21,43 +21,89 @@ hero:
 features:
   - icon: 🚢
     title: 创新玩法
-    details: 独家轻RPG系统、星露谷、附魔等多维度玩法
+    details: 独家轻 RPG 系统、星露谷、附魔等多维度玩法
   - icon: 💾
     title: 高性能优化
     details: 高性能设备，先进架构优化，多线路负载均衡
   - icon: ❤️
-    title: 优秀的社区
-    details: 公益化的纯净体验，几乎7×24 小时管理在线，跨次元社交生态
+    title: 优秀社区
+    details: 公益化纯净体验，7×24 小时管理在线，跨次元社交生态
   - icon: 🔧
     title: 稳定保障
     details: 长期开服不换档，每日增量备份 + 异地容灾，强力反作弊，自动白名单
   - icon: 🔄
     title: 持续更新
-    details: 长期更新和优化，不断添加趣味功能与修复问题
+    details: 长期更新优化，不断添加趣味功能与修复问题
 ---
 
-## 硬件配置
-> 英特尔i5 14600kf物理机，搭配360水冷 大核超频5.6GHz  
-> 64G 高频内存  
-> 宁波电信百兆主线路 + 宿迁三线BGP优化百兆线路(电信、移动、联通)  
-> 三星数据中心级固态存储  
+## 🚀 服务器概况
 
-## 软件、备份策略、存档计划
-> 使用Velocity反向代理下游Purpur服务端，实现一些高级的网络优化特性，稳定与性能兼备。  
-> 应用全容器化管理，JumpServer堡垒机跳转，安全的多人协作。  
-> 本地SQL数据库每天备份4次，每周进行一次虚拟机完整本地克隆备份，每月进行一次服务端完整云端备份。保障数据安全。  
-> 梦始之空世界存档永久保存，计划性扩大世界边界。  
+**锐界幻境** 是一个致力于打造开放创新 Minecraft 游戏平台的公益服务器。我们相信每个玩家都值得拥有一个自由、纯净、有趣的游戏环境。
 
-## 获取支持
+### 核心理念
 
-- 加入玩家交流群获取帮助: 523914625
-- 访问[GitHub仓库](https://github.com/fwindemiko/MiragEdge-DocWeb)提交问题或贡献代码
+- 🎮 **高品质体验** - 精心配置，只为更好的游戏感受
+- 🤝 **社区驱动** - 玩家声音是我们进步的动力
+- 🔒 **安全稳定** - 专业运维，数据安全有保障
+- 💡 **持续创新** - 不断探索新的玩法和可能性
 
-## 一些话
-- 我只是个技术佬，语言学科非常烂，若文档有什么难读的地方，或者语句语法错误，还请麻烦指正。  
-- 除了设计制作锐界幻境服务器，我还接受各种开服技术咨询，有偿问题解决，中小插件定制。  
-- 我对锐界幻境的最终目标是“实现一个开放创新的服务器平台”。  
-  ———狐风轩汐^F.windEmiko
+---
+
+## 💻 硬件配置
+
+| 组件 | 规格 |
+|------|------|
+| CPU | 英特尔 i5 14600KF（5.6GHz 超频） |
+| 内存 | 64GB 高频内存 |
+| 网络 | 宁波电信百兆 + 宿迁三线 BGP 优化百兆 |
+| 存储 | 三星数据中心级 SSD |
+
+---
+
+## 🛡️ 软件架构与备份策略
+
+### 服务架构
+
+- 使用 **Velocity** 反向代理 + **Purpur** 服务端
+- 全容器化管理，JumpServer 堡垒机安全协作
+- 专业的网络优化，确保低延迟高稳定
+
+### 数据备份
+
+| 备份类型 | 频率 | 说明 |
+|----------|------|------|
+| 数据库备份 | 每日 4 次 | 实时保护游戏数据 |
+| 虚拟机克隆 | 每周 | 完整系统快照 |
+| 云端归档 | 每月 | 异地容灾保障 |
+
+### 存档政策
+
+> 梦始之空世界存档 **永久保存**，我们承诺不会删除任何玩家的心血结晶。
+
+---
+
+## 📢 获取帮助
+
+- 💬 **玩家交流群**: 523914625
+- 🐛 **问题反馈**: [GitHub Issues](https://github.com/fwindemiko/MiragEdge-DocWeb/issues)
+- 💻 **贡献代码**: [GitHub 仓库](https://github.com/fwindemiko/MiragEdge-DocWeb)
+
+---
+
+## 📝 开发者的话
+
+> 语言学科是我的弱项，若文档有写得不好的地方，恳请指正 🙏
+>
+> 除了运营锐界幻境外，我 also 提供：
+> - 开服技术咨询
+> - 有偿问题解决
+> - 中小插件定制开发
+>
+> 对锐界幻境的最终目标是：**"实现一个开放创新的服务器平台"**
+>
+> —— 狐风轩汐 (F.windEmiko)
+
+---
 
 <style scoped>
 #star-canvas {
@@ -81,16 +127,14 @@ features:
 <script setup>
 import { onMounted, onUnmounted, nextTick } from 'vue'
 
-// 普通封面图片列表
-const normalImages = [
-  '/title_img/icon-1.png',
-  '/title_img/icon-1.png',
+// 封面图片列表
+const images = [
   '/title_img/icon-1.png',
   '/title_img/icon-2.png',
   '/title_img/icon-3.png',
 ]
 
-// 隐藏款图片（出现概率是其他图片的1/10）
+// 隐藏款图片
 const hiddenImage = '/title_img/icon-dis.png'
 
 let animationFrameId = null
@@ -100,16 +144,14 @@ onMounted(async () => {
   await nextTick()
   
   // 加权随机选择：dis.png 概率为其他图片的 1/5
-  // 创建一个加权数组：其他图片各出现5次，隐藏款出现1次
   const weightedImages = [
-    ...normalImages.map(img => Array(5).fill(img)).flat(), // 每张普通图片出现5次
-    hiddenImage // 隐藏款出现1次
+    ...images.flatMap(img => Array(5).fill(img)),
+    hiddenImage
   ]
   
-  // 随机选择一张图片
   const randomImage = weightedImages[Math.floor(Math.random() * weightedImages.length)]
   
-  // 尝试多种选择器来查找 hero 图片
+  // 查找 hero 图片元素
   const selectors = [
     '.VPHomeHero .VPImage img',
     '.VPHomeHero img',
@@ -123,26 +165,22 @@ onMounted(async () => {
     if (heroImage) break
   }
   
-  // 设置图片的函数
   const setImage = (imgElement, imageSrc) => {
     imgElement.src = imageSrc
     imgElement.alt = 'xingjiu'
-    // 如果是 emoji4.png，缩放到 1.5 倍
+    // emoji4.png 需要放大
     if (imageSrc.includes('emoji4.png')) {
       imgElement.style.transform = 'scale(1.5)'
       imgElement.style.transformOrigin = 'center'
     } else {
-      // 重置其他图片的缩放
       imgElement.style.transform = ''
       imgElement.style.transformOrigin = ''
     }
   }
   
-  // 如果找到了图片元素，替换它
   if (heroImage) {
     setImage(heroImage, randomImage)
   } else {
-    // 如果没找到，延迟再试一次（等待 VitePress 渲染完成）
     setTimeout(() => {
       for (const selector of selectors) {
         heroImage = document.querySelector(selector)
@@ -154,7 +192,6 @@ onMounted(async () => {
     }, 100)
   }
   
-  // 初始化星星特效
   initStarEffect()
 })
 
@@ -268,7 +305,7 @@ function initStarEffect() {
       if (mouse.x !== undefined) {
         const dx = mouse.x - this.x
         const dy = mouse.y - this.y
-        const distance = Math.sqrt(dx*dx + dy*dy)
+        const distance = Math.sqrt(dx * dx + dy * dy)
         
         if (distance < 300) {
           const forceX = dx / distance
@@ -330,12 +367,10 @@ function initStarEffect() {
     animationFrameId = requestAnimationFrame(animate)
     
     ctx.clearRect(0, 0, width, height)
-    
     ctx.globalCompositeOperation = 'lighter'
     
     frame++
     
-    // 获取图标位置
     const heroImage = document.querySelector('.VPHomeHero .VPImage img') || 
                      document.querySelector('.VPHomeHero img')
     
