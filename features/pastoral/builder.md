@@ -132,6 +132,6 @@
 ---
 
 > 📌 **相关页面推荐**：
-> - [独特功能](./function.md) - 更多实用功能
-> - [领地系统](./dom.md) - 保护你的建筑
-> - [季节系统](./pastoral/seasons/info.md) - 探索世界风景
+> - [独特功能](/features/base/function) - 更多实用功能
+> - [领地系统](/features/base/dom) - 保护你的建筑
+> - [季节系统](/features/pastoral/seasons/info) - 探索世界风景

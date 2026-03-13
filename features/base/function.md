@@ -258,6 +258,5 @@
 ---
 
 > 📌 **相关页面推荐**：
-> - [季节系统](./pastoral/seasons/info.md) - 探索四季变换的魅力
-> - [附魔系统](./adventure/enchantments/info.md) - 打造你的神兵利器
-> - [传送系统](./base/teleport.md) - 快速穿梭各地
+> - [季节系统](/features/pastoral/seasons/info) - 探索四季变换的魅力
+> - [附魔系统](/features/adventure/enchantments/info) - 打造你的神兵利器
