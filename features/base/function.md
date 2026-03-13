@@ -4,7 +4,7 @@
   src="https://cloud.miragedge.top/d/Dev/web_image/features/base/function/hero.png"
   alt="独特功能"
   caption="锐界幻境 · 独特功能"
-  width="600"
+  width="300"
   radius="12px"
   shadow
   border
@@ -258,6 +258,5 @@
 ---
 
 > 📌 **相关页面推荐**：
-> - [季节系统](./pastoral/seasons/info.md) - 探索四季变换的魅力
-> - [附魔系统](./adventure/enchantments/info.md) - 打造你的神兵利器
-> - [传送系统](./base/teleport.md) - 快速穿梭各地
+> - [季节系统](/features/pastoral/seasons/info) - 探索四季变换的魅力
+> - [附魔系统](/features/adventure/enchantments/info) - 打造你的神兵利器
