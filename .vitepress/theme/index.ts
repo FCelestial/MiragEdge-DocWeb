@@ -7,6 +7,7 @@ import DefaultTheme from 'vitepress/theme'
 import SmartImage from './components/vue/SmartImage.vue'
 import ChristmasTree from './components/vue/ChristmasTree.vue'
 import NodeStatus from './components/vue/NodeStatus.vue'
+import FeatureCard from './components/vue/FeatureCard.vue'
 import './css/custom.css'
 
 // 导入所有样式文件
@@ -48,6 +49,7 @@ export default {
     app.component('SmartImage', SmartImage)
     app.component('ChristmasTree', ChristmasTree)
     app.component('NodeStatus', NodeStatus)
+    app.component('FeatureCard', FeatureCard)
 
     // 仅在浏览器环境下执行
     if (inBrowser) {
