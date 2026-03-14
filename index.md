@@ -47,48 +47,34 @@ features:
 - 🔒 **安全稳定** - 专业运维，数据安全有保障
 - 💡 **持续创新** - 不断探索新的玩法和可能性
 
----
-
 ## 💻 硬件配置
 
-| 组件 | 规格 |
-|------|------|
-| CPU | 英特尔 i5 14600KF（5.6GHz 超频） |
-| 内存 | 64GB 高频内存 |
-| 网络 | 宁波电信百兆 + 宿迁三线 BGP 优化百兆 |
-| 存储 | 三星数据中心级 SSD |
+服务器采用高性能硬件配置，确保游戏流畅运行：
 
----
+- **处理器** - 英特尔 i5 14600KF（5.6GHz 超频）
+- **内存** - 64GB 高频内存
+- **网络** - 宁波电信百兆 + 宿迁三线 BGP 优化百兆
+- **存储** - 三星数据中心级 SSD
 
 ## 🛡️ 软件架构与备份策略
 
 ### 服务架构
 
-- 使用 **Velocity** 反向代理 + **Purpur** 服务端
-- 全容器化管理，JumpServer 堡垒机安全协作
-- 专业的网络优化，确保低延迟高稳定
+使用 **Velocity** 反向代理 + **Purpur** 服务端，全容器化管理，JumpServer 堡垒机安全协作，专业的网络优化，确保低延迟高稳定。
 
 ### 数据备份
 
-| 备份类型 | 频率 | 说明 |
-|----------|------|------|
-| 数据库备份 | 每日 4 次 | 实时保护游戏数据 |
-| 虚拟机克隆 | 每周 | 完整系统快照 |
-| 云端归档 | 每月 | 异地容灾保障 |
-
-### 存档政策
+- **数据库备份** — 每日 4 次，实时保护游戏数据
+- **虚拟机克隆** — 每周，完整系统快照
+- **云端归档** — 每月，异地容灾保障
 
 > 梦始之空世界存档 **永久保存**，我们承诺不会删除任何玩家的心血结晶。
-
----
 
 ## 📢 获取帮助
 
 - 💬 **玩家交流群**: 523914625
 - 🐛 **问题反馈**: [GitHub Issues](https://github.com/fwindemiko/MiragEdge-DocWeb/issues)
 - 💻 **贡献代码**: [GitHub 仓库](https://github.com/fwindemiko/MiragEdge-DocWeb)
-
----
 
 ## 📝 开发者的话
 
@@ -102,8 +88,6 @@ features:
 > 对锐界幻境的最终目标是：**"实现一个开放创新的服务器平台"**
 >
 > —— 狐风轩汐 (F.windEmiko)
-
----
 
 <style scoped>
 #star-canvas {
@@ -142,15 +126,15 @@ let particles = []
 
 onMounted(async () => {
   await nextTick()
-  
+
   // 加权随机选择：dis.png 概率为其他图片的 1/5
   const weightedImages = [
     ...images.flatMap(img => Array(5).fill(img)),
     hiddenImage
   ]
-  
+
   const randomImage = weightedImages[Math.floor(Math.random() * weightedImages.length)]
-  
+
   // 查找 hero 图片元素
   const selectors = [
     '.VPHomeHero .VPImage img',
@@ -158,13 +142,13 @@ onMounted(async () => {
     'main .VPImage img',
     '[alt="xingjiu"]'
   ]
-  
+
   let heroImage = null
   for (const selector of selectors) {
     heroImage = document.querySelector(selector)
     if (heroImage) break
   }
-  
+
   const setImage = (imgElement, imageSrc) => {
     imgElement.src = imageSrc
     imgElement.alt = 'xingjiu'
@@ -177,7 +161,7 @@ onMounted(async () => {
       imgElement.style.transformOrigin = ''
     }
   }
-  
+
   if (heroImage) {
     setImage(heroImage, randomImage)
   } else {
@@ -191,7 +175,7 @@ onMounted(async () => {
       }
     }, 100)
   }
-  
+
   initStarEffect()
 })
 
@@ -204,11 +188,11 @@ onUnmounted(() => {
 function initStarEffect() {
   const canvas = document.getElementById('star-canvas')
   if (!canvas) return
-  
+
   const ctx = canvas.getContext('2d')
   let width = canvas.width = window.innerWidth
   let height = canvas.height = window.innerHeight
-  
+
   const config = {
     spawnRate: 12,
     startSpeed: 0.6,
@@ -221,7 +205,7 @@ function initStarEffect() {
     starBaseSize: 4,
     circleRadius: 600
   }
-  
+
   const mouse = {
     x: undefined,
     y: undefined,
@@ -232,14 +216,14 @@ function initStarEffect() {
     isMoving: false,
     timer: null
   }
-  
+
   const resize = () => {
     width = canvas.width = window.innerWidth
     height = canvas.height = window.innerHeight
   }
-  
+
   window.addEventListener('resize', resize)
-  
+
   window.addEventListener('mousemove', (e) => {
     mouse.x = e.x
     mouse.y = e.y
@@ -248,7 +232,7 @@ function initStarEffect() {
     mouse.lastX = e.x
     mouse.lastY = e.y
     mouse.isMoving = true
-    
+
     clearTimeout(mouse.timer)
     mouse.timer = setTimeout(() => {
       mouse.vx = 0
@@ -258,31 +242,31 @@ function initStarEffect() {
       mouse.y = undefined
     }, 100)
   })
-  
+
   class Star {
     constructor(centerX, centerY) {
       const angle = Math.random() * Math.PI * 2
       const radius = Math.random() * config.circleRadius * 0.3 + config.circleRadius * 0.1
       this.x = centerX + Math.cos(angle) * radius
       this.y = centerY + Math.sin(angle) * radius
-      
+
       const driftAngle = angle + (Math.random() - 0.5) * 0.5
       const speed = config.startSpeed + Math.random() * 0.3
-      
+
       this.vx = Math.cos(driftAngle) * speed
       this.vy = Math.sin(driftAngle) * speed
-      
+
       this.size = Math.random() * 5 + config.starBaseSize
       this.life = 1
       this.decay = Math.random() * 0.001 + 0.0015
       this.hue = Math.random() * 60 + 180
     }
-    
+
     draw(ctx) {
       ctx.save()
       ctx.translate(this.x, this.y)
       ctx.rotate(this.life * 0.5)
-      
+
       ctx.beginPath()
       const r = this.size
       ctx.moveTo(0, -r)
@@ -291,58 +275,58 @@ function initStarEffect() {
       ctx.quadraticCurveTo(0, 0, -r, 0)
       ctx.quadraticCurveTo(0, 0, 0, -r)
       ctx.closePath()
-      
+
       const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, r)
       gradient.addColorStop(0, `hsla(${this.hue}, 80%, 80%, ${this.life})`)
       gradient.addColorStop(1, `hsla(${this.hue}, 80%, 50%, ${this.life})`)
-      
+
       ctx.fillStyle = gradient
       ctx.fill()
       ctx.restore()
     }
-    
+
     update() {
       if (mouse.x !== undefined) {
         const dx = mouse.x - this.x
         const dy = mouse.y - this.y
         const distance = Math.sqrt(dx * dx + dy * dy)
-        
+
         if (distance < 300) {
           const forceX = dx / distance
           const forceY = dy / distance
-          
+
           this.vx += forceX * config.attraction
           this.vy += forceY * config.attraction
-          
+
           if (mouse.isMoving) {
             let pushX = mouse.vx * config.mouseForce
             let pushY = mouse.vy * config.mouseForce
-            
+
             const pushStrength = Math.sqrt(pushX * pushX + pushY * pushY)
             if (pushStrength > config.maxMouseForce) {
               const scale = config.maxMouseForce / pushStrength
               pushX *= scale
               pushY *= scale
             }
-            
+
             this.vx += pushX
             this.vy += pushY
           }
         }
       }
-      
+
       this.vx *= config.friction
       this.vy *= config.friction
-      
+
       const currentSpeed = Math.sqrt(this.vx * this.vx + this.vy * this.vy)
       if (currentSpeed > config.maxStarSpeed) {
         const scale = config.maxStarSpeed / currentSpeed
         this.vx *= scale
         this.vy *= scale
       }
-      
+
       if (currentSpeed < config.minDriftSpeed) {
-        const heroImage = document.querySelector('.VPHomeHero .VPImage img') || 
+        const heroImage = document.querySelector('.VPHomeHero .VPImage img') ||
                          document.querySelector('.VPHomeHero img')
         if (heroImage) {
           const rect = heroImage.getBoundingClientRect()
@@ -353,47 +337,47 @@ function initStarEffect() {
           this.vy += Math.sin(angleToCenter) * 0.005
         }
       }
-      
+
       this.x += this.vx
       this.y += this.vy
       this.hue += 0.2
       this.life -= this.decay
     }
   }
-  
+
   let frame = 0
-  
+
   const animate = () => {
     animationFrameId = requestAnimationFrame(animate)
-    
+
     ctx.clearRect(0, 0, width, height)
     ctx.globalCompositeOperation = 'lighter'
-    
+
     frame++
-    
-    const heroImage = document.querySelector('.VPHomeHero .VPImage img') || 
+
+    const heroImage = document.querySelector('.VPHomeHero .VPImage img') ||
                      document.querySelector('.VPHomeHero img')
-    
+
     if (heroImage && frame % config.spawnRate === 0) {
       const rect = heroImage.getBoundingClientRect()
       const centerX = rect.left + rect.width / 2
       const centerY = rect.top + rect.height / 2
       particles.push(new Star(centerX, centerY))
     }
-    
+
     for (let i = particles.length - 1; i >= 0; i--) {
       const p = particles[i]
       p.update()
       p.draw(ctx)
-      
+
       if (p.life <= 0) {
         particles.splice(i, 1)
       }
     }
-    
+
     ctx.globalCompositeOperation = 'source-over'
   }
-  
+
   animate()
 }
 </script>

@@ -2,16 +2,12 @@
 
 本服务器支持以下客户端模组，点击即可跳转到对应说明：
 
-| 模组名称 | 类型 | 说明 |
-|----------|------|------|
-| [简单语音聊天](#简单语音聊天simple-voice-chat) | 语音 | 范围语音/全局语音聊天 |
-| [苹果皮](#苹果皮appleskin) | 辅助 | 显示饱食度/饱和度 |
-| [遥远地平线](#遥远地平线) | 视觉 | 支持1024视距 |
-| [音乐点播姬](#音乐点播姬allmusic) | 娱乐 | 服务器内点播音乐 |
-| [Xaero小地图](#xaero的小地图xaeros-minimap) | 辅助 | 游戏内小地图 |
-| [连锁采集](#连锁采集veinminer) | 工具 | 快速连锁挖掘矿物 |
-
----
+- [简单语音聊天](#简单语音聊天simple-voice-chat) — 范围语音/全局语音聊天
+- [苹果皮](#苹果皮appleskin) — 显示饱食度/饱和度
+- [遥远地平线](#遥远地平线) — 支持1024视距
+- [音乐点播姬](#音乐点播姬allmusic) — 服务器内点播音乐
+- [Xaero小地图](#xaero的小地图xaeros-minimap) — 游戏内小地图
+- [连锁采集](#连锁采集veinminer) — 快速连锁挖掘矿物
 
 ## 简单语音聊天(Simple Voice Chat)
 
@@ -42,8 +38,6 @@
 
 > ⚠ 注意：语音聊天为加密传输，但模组作者不保证绝对安全性，使用该功能请自行承担风险！
 
----
-
 ## 苹果皮(Appleskin)
 
 [Modrinth下载页](https://modrinth.com/mod/appleskin?version=1.21.11#download "modrepo")(选择你需要的版本)
@@ -52,13 +46,9 @@
 
 各种与食物相关的HUD改进，通过服务端侧支持，显示准确的饱食度/饱和度
 
----
-
 ## 遥远地平线
 
 支持最大视距1024区块
-
----
 
 ## 音乐点播姬(AllMusic)
 
@@ -79,7 +69,7 @@
 
 主核心指令：`/music`
 
-#### 基础指令
+**基础指令**
 - `/music help` - 查看全部指令帮助
 - `/music [音乐ID]` - 点播指定ID的歌曲
 - `/music stop` - 停止当前音乐播放
@@ -96,7 +86,7 @@
 - `/music nextpage` - 搜索结果下一页
 - `/music lastpage` - 搜索结果上一页
 
-#### 界面自定义指令
+**界面自定义指令**
 - `/music hud [位置] enable` - 启用/关闭指定界面
 - `/music hud [位置] pos [x] [y]` - 设置界面位置
 - `/music hud pic size [尺寸]` - 设置图片尺寸
@@ -108,8 +98,6 @@
 - `/music hud enable` - 启用/关闭所有界面
 - `/music hud reset` - 重置所有界面
 
----
-
 ## Xaero的小地图(Xaero's Minimap)
 
 [Modrinth下载页](https://modrinth.com/mod/xaeros-world-map?version=1.21.11#download "modrepo")(选择你需要的版本)
@@ -117,8 +105,6 @@
 > ✔ 便捷安装：直接在 PCL2 中搜索「Xaero's Minimap」即可一键安装
 
 限制公平模式 —— 无雷达，无洞穴模式
-
----
 
 ## 连锁采集(VeinMiner)
 
