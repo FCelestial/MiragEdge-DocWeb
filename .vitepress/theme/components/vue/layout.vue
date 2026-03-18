@@ -15,6 +15,7 @@ import CornerLeaves from './CornerLeaves.vue';
 import CornerSurprise from './CornerSurprise.vue';
 import CornerFireflies from './CornerFireflies.vue';
 import CornerClickEffect from './CornerClickEffect.vue';
+import Live2D from './Live2D.vue';
 
 const { Layout } = DefaultTheme;
 const { route } = useRouter();
@@ -23,6 +24,9 @@ const transitionName = ref('scale-in');
 
 // 检测是否为 404 页面
 const is404 = computed(() => page.value.isNotFound);
+
+// 检测是否为首页
+const isHome = computed(() => route.path === '/' || route.path === '/index.html');
 
 // 随机角落装饰 - 每次路由变化时重新计算
 const randomCorner = ref(null)
@@ -112,6 +116,8 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }) => {
     <CornerFireflies v-if="randomCorner === 'fireflies'" />
     <CornerSurprise />
     <CornerClickEffect />
+    <!-- Live2D 看板娘 - 只在首页显示 -->
+    <Live2D v-if="isHome" />
 
     <!-- 页面过渡动画 -->
     <transition
