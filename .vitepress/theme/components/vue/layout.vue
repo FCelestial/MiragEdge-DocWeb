@@ -3,13 +3,17 @@
 <script setup>
 import { useRouter, useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { ref, watch, nextTick, provide } from "vue";
+import { ref, watch, nextTick, provide, computed } from "vue";
 import Contributors from './Contributors.vue';
+import NotFound from './NotFound.vue';
 
 const { Layout } = DefaultTheme;
 const { route } = useRouter();
-const { isDark } = useData();
+const { isDark, page } = useData();
 const transitionName = ref('scale-in');
+
+// 检测是否为 404 页面
+const is404 = computed(() => page.value.isNotFound);
 
 /**
  * 滚动到页面顶部
@@ -77,12 +81,15 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }) => {
 <template>
   <div class="router-wrapper">
     <!-- 页面过渡动画 -->
-    <transition 
+    <transition
       :name="transitionName"
       mode="out-in"
     >
       <div :key="route.path">
-        <Layout />
+        <!-- 404 页面 -->
+        <NotFound v-if="is404" />
+        <!-- 正常页面 -->
+        <Layout v-else />
 
         <!-- 贡献者组件 -->
         <div class="centerdss">

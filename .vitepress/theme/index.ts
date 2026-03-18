@@ -4,6 +4,7 @@
 import { h, onMounted } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import NotFound from './components/vue/NotFound.vue'
 import SmartImage from './components/vue/SmartImage.vue'
 import ChristmasTree from './components/vue/ChristmasTree.vue'
 import NodeStatus from './components/vue/NodeStatus.vue'
