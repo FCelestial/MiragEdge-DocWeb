@@ -7,7 +7,6 @@
 ## 目录
 
 - [建筑便利](#建筑便利)
-- [建筑工具](#建筑工具)
 - [便捷道具](#便捷道具)
 
 ## 建筑便利
@@ -33,7 +32,7 @@
 制作各种有趣的盔甲架展示！
 
 - 🎮 Java版：蹲下 + 右键
-- 📱 基洲版：蹲下 + 长按
+- 📱 基岩版：蹲下 + 长按
 
 可控制：大小、姿势、无敌、发光、隐形、放置物品等
 
@@ -70,7 +69,7 @@
 - SECOND_ROW - 背包第二行
 - THIRD_ROW - 背包第三行
 
-> ⚠️ 不兼容基洲版
+> ⚠️ 基岩版不兼容切换来源模式
 
 <SmartImage
   src="https://cloud.miragedge.top/d/Dev/web_image/features/pastoral/builder/trowel.png"
