@@ -79,20 +79,20 @@ jobs:
       - name: 复制 mark.js 依赖
         run: cp -rf ./.vitepress/mark.js ./node_modules/
 
-      - name: Create test directories
+      - name: 创建测试目录
         run: |
           mkdir -p "${{ env.TEST_OUTPUT_DIR }}/test/coverage"
           mkdir -p "${{ env.TEST_OUTPUT_DIR }}/test/test-results"
           mkdir -p "${{ env.TEST_OUTPUT_DIR }}/test/logs"
 
-      - name: Run unit tests
+      - name: 运行单元测试
         id: unit-tests
         run: |
           echo "=== 开始执行单元测试 ==="
           pnpm run test:unit 2>&1 | tee "${{ env.TEST_OUTPUT_DIR }}/test/logs/unit-test.log"
           echo "unit_exit_code=$?" >> $GITHUB_OUTPUT
 
-      - name: Upload unit test results
+      - name: 上传单元测试结果
         if: always()
         uses: actions/upload-artifact@v4
         with:
