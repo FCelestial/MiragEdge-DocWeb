@@ -21,7 +21,7 @@ export function showConsoleLogo() {
 export function showAestheticNotice() {
   // 配置项
   const NOTICE_KEY = 'hasSeenAestheticNotice_2024_v1'
-  const EXPIRY_DATE_STRING = '2026-3-2'
+  const EXPIRY_DATE_STRING = '2026-6-20'
   const ISSUE_URL = 'https://github.com/fwindemiko/MiragEdge-DocWeb/issues/new?template=issue_template.yml'
 
   try {
