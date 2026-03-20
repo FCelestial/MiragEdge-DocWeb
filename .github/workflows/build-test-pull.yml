@@ -13,9 +13,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
-        with: { version: ${{ env.PNPM_VERSION }} }
+        with:
+          version: ${{ env.PNPM_VERSION }}
       - uses: actions/setup-node@v4
-        with: { node-version: ${{ env.NODE_VERSION }} }
+        with:
+          node-version: ${{ env.NODE_VERSION }}
       - run: pnpm install && pnpm run typecheck 2>&1 || echo "跳过"
 
   test:
@@ -25,9 +27,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v2
-        with: { version: ${{ env.PNPM_VERSION }} }
+        with:
+          version: ${{ env.PNPM_VERSION }}
       - uses: actions/setup-node@v4
-        with: { node-version: ${{ env.NODE_VERSION }} }
+        with:
+          node-version: ${{ env.NODE_VERSION }}
       - run: pnpm install && cp -rf ./.vitepress/mark.js ./node_modules/ && pnpm run build
       - name: 打包
         if: github.event_name == 'push'
@@ -35,7 +39,10 @@ jobs:
       - name: 上传构建产物
         if: github.event_name == 'push'
         uses: actions/upload-artifact@v4
-        with: { name: site, path: site.tar.gz, retention-days: 1 }
+        with:
+          name: site
+          path: site.tar.gz
+          retention-days: 1
 
   deploy:
     name: 部署
@@ -45,10 +52,12 @@ jobs:
     steps:
       - name: 下载构建产物
         uses: actions/download-artifact@v4
-        with: { name: site }
+        with:
+          name: site
       - name: 部署
         uses: webfactory/ssh-agent@v0.5.3
-        with: { ssh-private-key: ${{ secrets.actions }} }
+        with:
+          ssh-private-key: ${{ secrets.actions }}
       - run: |
           ssh-keyscan -H 110.42.45.207 >> ~/.ssh/known_hosts 2>/dev/null
           ssh -o StrictHostKeyChecking=no root@110.42.45.207 "
