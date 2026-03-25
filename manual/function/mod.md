@@ -2,17 +2,19 @@
 
 本服务器支持以下客户端模组，点击即可跳转到对应说明：
 
-- [简单语音聊天](#简单语音聊天simple-voice-chat) — 范围语音/全局语音聊天
-- [苹果皮](#苹果皮appleskin) — 显示饱食度/饱和度
-- [遥远地平线](#遥远地平线) — 支持1024视距
-- [音乐点播姬](#音乐点播姬allmusic) — 服务器内点播音乐
-- [Xaero小地图](#xaero的小地图xaeros-minimap) — 游戏内小地图
-- [连锁采集](#连锁采集veinminer) — 快速连锁挖掘矿物
+- [简单语音聊天](#简单语音聊天(simple-voice-chat)) — 范围语音/全局语音聊天
+- [外置登录器](#外置登录器(Yggdrasil)) — 加载使用外置登录的玩家皮肤
+- [苹果皮](#苹果皮(appleskin)) — 显示饱食度/饱和度
+- [遥远地平线](#遥远地平线(Distant_Horizons)) — 支持显示512视距
+- [聊天图片显示](#聊天图片显示(ChatImage)) — 群服消息互通可在游戏中查看图片
+- [音乐点播姬](#音乐点播姬(allmusic)) — 服务器内点播音乐
+- [Xaero小地图](#xaero的小地图(xaeros-minimap)) — 游戏内小地图
+- [连锁采集](#连锁采集(veinminer)) — 连锁挖掘快捷键支持
 
 ## 简单语音聊天(Simple Voice Chat)
 
 <SmartImage
-  src="/images/msreg/svc.jpg"
+  src="https://cloud.miragedge.top/d/Dev/web_image/msreg/mod/svc.jpg"
   maxWidth="80px"
   caption="Simple Voice Chat"
 />
@@ -38,6 +40,14 @@
 
 > ⚠ 注意：语音聊天为加密传输，但模组作者不保证绝对安全性，使用该功能请自行承担风险！
 
+## 外置登录器(Yggdrasil)
+
+1. 为在客户端使用了 LittleSkin 的 Yggdrasil 外置登录的玩家加载皮肤和披风  
+2. 也可以配合 万用皮肤补丁 CustomSkinLoader 使用。  
+当 CustomSkinLoader 版本高于 14.25 且加载列表中存在 GameProfile 加载项时（该加载项默认处于加载列表首位），该加载项即会加载来自 LittleSkin 的皮肤。
+
+这是官方客户端配置教程：https://manual.littlesk.in/yggdrasil/client
+
 ## 苹果皮(Appleskin)
 
 [Modrinth下载页](https://modrinth.com/mod/appleskin?version=1.21.11#download "modrepo")(选择你需要的版本)
@@ -46,14 +56,41 @@
 
 各种与食物相关的HUD改进，通过服务端侧支持，显示准确的饱食度/饱和度
 
-## 遥远地平线
+## 遥远地平线(Distant_Horizons)
 
-支持最大视距1024区块
+<SmartImage
+  src="https://cloud.miragedge.top/d/Dev/web_image/msreg/mod/dh.jpg"
+  maxWidth="240px"
+  caption="ChatImage"
+/>
+
+[Modrinth下载页](https://modrinth.com/mod/distanthorizons#download "modrepo")(选择你需要的版本)
+
+
+客户端安装该模组后，服内支持最大512区块视距范围
+
+## 聊天图片显示(ChatImage)
+
+<SmartImage
+  src="https://cloud.miragedge.top/d/Dev/web_image/msreg/mod/chatImage.jpg"
+  maxWidth="240px"
+  caption="ChatImage"
+/>
+
+[Modrinth下载页](https://modrinth.com/mod/chatimage#download "ChatImage")(选择你需要的版本)
+
+当客户端安装了此模组，通过群服互通发送的消息包含图片时，可在游戏中显示预览图片
+
+<SmartImage
+  src="https://cloud.miragedge.top/d/Dev/web_image/msreg/mod/chatImage_show.png"
+  maxWidth="550px"
+  caption="ChatImage_show"
+/>
 
 ## 音乐点播姬(AllMusic)
 
 <SmartImage
-  src="/images/msreg/allmusic.jpg"
+  src="https://cloud.miragedge.top/d/Dev/web_image/msreg/mod/allmusic.jpg"
   maxWidth="240px"
   caption="AllMusic"
 />
@@ -109,7 +146,7 @@
 ## 连锁采集(VeinMiner)
 
 <SmartImage
-  src="/images/msreg/VeinMiner.jpg"
+  src="https://cloud.miragedge.top/d/Dev/web_image/msreg/mod/VeinMiner.jpg"
   maxWidth="240px"
   caption="VeinMiner"
 />
