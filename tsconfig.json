@@ -11,32 +11,25 @@
     "esModuleInterop": true,
     "lib": [
       "ESNext",
-      "DOM"
+      "DOM",
+      "DOM.Iterable"
     ],
     "skipLibCheck": true,
     "noEmit": true,
-    "types": [
-      "vite/client",
-      "node"
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        ".vitepress/theme/*"
-      ]
-    }
+    "baseUrl": "."
   },
   "include": [
     ".vitepress/**/*.ts",
+    ".vitepress/**/*.d.ts",
     ".vitepress/**/*.tsx",
     ".vitepress/**/*.vue",
     ".vitepress/theme/**/*.ts",
+    ".vitepress/theme/**/*.d.ts",
     ".vitepress/theme/**/*.vue"
   ],
   "exclude": [
     "node_modules",
     ".vitepress/dist",
-    "**/dist",
-    ".git"
+    "**/dist"
   ]
 }
