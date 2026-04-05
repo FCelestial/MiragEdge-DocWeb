@@ -34,7 +34,7 @@ const octokit = new Octokit({
 async function getRepoContributors(): Promise<EmailWithSha1[]> {
   try {
     const logOutput = await git.log(['--format=%ae %H']);
-    const logLines = logOutput.latest?.hash.split('\n');
+    const logLines = logOutput.all;
     
     if (!logLines) {
       console.warn('No commits found in repository');
@@ -236,7 +236,7 @@ function isHomePage(code: string, id: string): boolean {
  * Vite插件
  */
 export default function addContributorsPlugin(): Plugin {
-  let fullContributorData: FullContributorData[] = [];
+  const fullContributorData: FullContributorData[] = [];
   let dataLoaded = false;
   
   return {
