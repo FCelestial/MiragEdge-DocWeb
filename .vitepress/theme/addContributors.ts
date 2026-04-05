@@ -34,11 +34,11 @@ const octokit = new Octokit({
 async function getRepoContributors(): Promise<EmailWithSha1[]> {
   try {
     const logOutput = await git.log(['--format=%ae %H']);
-    // logOutput.all 是 commit 对象数组，使用 as unknown as 进行类型断言
-    type CommitWithEmail = { author_email: string; hash: string };
-    const logAll = logOutput.all as unknown as CommitWithEmail[];
+    // logOutput.all 是 readonly 数组，需要用 as unknown as 转换到 readonly 接口类型
+    type CommitEmail = { readonly author_email: string; readonly hash: string };
+    const logAll = logOutput.all as unknown as readonly CommitEmail[];
     
-    if (!logAll || logAll.length === 0) {
+    if (logAll.length === 0) {
       console.warn('No commits found in repository');
       return [];
     }
@@ -156,11 +156,11 @@ async function getEmailList(filePath: string): Promise<string[]> {
       filePath,
     ]);
     
-    // logOutput.all 是 commit 对象数组，使用 as unknown as 进行类型断言
-    type CommitWithEmail = { author_email: string; hash: string };
-    const logAll = logOutput.all as unknown as CommitWithEmail[];
+    // logOutput.all 是 readonly 数组，需要用 as unknown as 转换到 readonly 接口类型
+    type CommitEmail = { readonly author_email: string; readonly hash: string };
+    const logAll = logOutput.all as unknown as readonly CommitEmail[];
     
-    if (!logAll || logAll.length === 0) {
+    if (logAll.length === 0) {
       console.log(`No contributors found for file: ${filePath}`);
       return [];
     }
