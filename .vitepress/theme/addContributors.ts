@@ -34,7 +34,8 @@ const octokit = new Octokit({
 async function getRepoContributors(): Promise<EmailWithSha1[]> {
   try {
     const logOutput = await git.log(['--format=%ae %H']);
-    const logAll = logOutput.all;
+    // logOutput.all 是 commit 对象数组，每个对象有 author_email 和 hash 属性
+    const logAll = logOutput.all as Array<{ author_email: string; hash: string }>;
     
     if (!logAll || logAll.length === 0) {
       console.warn('No commits found in repository');
@@ -43,22 +44,17 @@ async function getRepoContributors(): Promise<EmailWithSha1[]> {
     
     const contributors = new Map<string, string>();
     
-    // 去重，只保留每个Email的第一个commit
-    // logOutput.all 是 commit 对象数组，每个对象有 author_email 和 hash 属性
+    // 去重，只保留每个Email的第一个commit（按时间倒序）
     logAll.reverse().forEach((commit) => {
-      const email = commit.author_email;
+      const email = commit.author_email?.trim();
       const sha1 = commit.hash;
-      if (email && sha1 && !contributors.has(email)) {
-        contributors.set(email, sha1);
-      }
-    });
       if (email && sha1 && !contributors.has(email)) {
         contributors.set(email, sha1);
       }
     });
     
     return Array.from(contributors).map(([email, sha1]) => ({ 
-      email: email.trim(), 
+      email, 
       sha1 
     }));
   } catch (error) {
@@ -159,19 +155,19 @@ async function getEmailList(filePath: string): Promise<string[]> {
       filePath,
     ]);
     
-    const logAll = logOutput.all;
+    // logOutput.all 是 commit 对象数组，每个对象有 author_email 属性
+    const logAll = logOutput.all as Array<{ author_email: string; hash: string }>;
     
     if (!logAll || logAll.length === 0) {
       console.log(`No contributors found for file: ${filePath}`);
       return [];
     }
     
-    // 去重，只保留每个Email的第一个commit
-    // logOutput.all 是 commit 对象数组，使用 author_email 获取邮箱
+    // 去重，只保留每个Email的第一个commit（按时间倒序）
     const emailSet = new Set<string>();
     logAll.reverse().forEach((commit) => {
       const email = commit.author_email?.trim();
-      if (email) {
+      if (email && !emailSet.has(email)) {
         emailSet.add(email);
       }
     });
@@ -248,7 +244,7 @@ function isHomePage(code: string, id: string): boolean {
  * Vite插件
  */
 export default function addContributorsPlugin(): Plugin {
-  const fullContributorData: FullContributorData[] = [];
+  let fullContributorData: FullContributorData[] = [];
   let dataLoaded = false;
   
   return {
