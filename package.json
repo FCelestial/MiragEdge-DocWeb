@@ -13,7 +13,8 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "contributors": "node ./.vitepress/theme/components/js/contributors.js"
+    "contributors": "node ./.vitepress/theme/components/js/contributors.js",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "F.windEmiko",
