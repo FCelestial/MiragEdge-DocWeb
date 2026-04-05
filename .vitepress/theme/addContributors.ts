@@ -1,8 +1,6 @@
 import type { Plugin } from 'vite';
 import simpleGit from 'simple-git';
 import { Octokit } from '@octokit/rest';
-import * as fs from 'fs';
-import * as path from 'path';
 import * as dotenv from 'dotenv';
 
 // 加载环境变量
