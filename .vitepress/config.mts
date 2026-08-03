@@ -265,7 +265,7 @@ export default defineConfig({
               link: '/features/adventure/levelledmobs',
             },
             {
-              text: '💀 死亡轮回',
+              text: '💀 死亡回程',
               link: '/features/adventure/deathreincarnation',
             },
             {
@@ -386,6 +386,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: '赛季玩法设计方案', link: '/develop/gameplay/liveops_260107' },
+            { text: '📦 数据包开发工作流', link: '/develop/workflows/datapack-workflow' },
           ]
         },
         {
